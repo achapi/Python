@@ -13,4 +13,4 @@ list(accumulate([]))
 for key, group in groupby([])
 
 #bit全探索
-for l in list(itertools.product([0,1], repeat=n))
+for l in list(product([0,1], repeat=n))
