@@ -1,7 +1,7 @@
 def validate(n):
     return 
 
-def binarysearch(a):
+def binarysearch():
     left = 1
     right = 10 ** 9
     r=0
