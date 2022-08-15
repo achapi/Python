@@ -1,12 +1,9 @@
 import heapq
 def dijkstra(s):
-    # 始点から各頂点への最短距離
     d = [float('inf')]*n
     d[s] = 0
-    # 各頂点が訪問済みかどうか
     used = [False]*n
     used[s] = True
-    # 仮の距離を記録するヒープ
     que = []
     for e in g[s]:
         heapq.heappush(que, e)
