@@ -1,16 +1,16 @@
 from itertools import*
 
 #順列
-list(permutations([]))
+permutations()
 
 #組み合わせ
-list(combinations([],n))
+combinations(,n)
 
 #累積和
-list(accumulate([]))
+accumulate()
 
 #値を個数で区切るやつ
 for key, group in groupby([])
 
 #bit全探索
-for l in list(product([0,1], repeat=n))
+for l in product([0,1], repeat=n)
