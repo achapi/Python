@@ -7,4 +7,6 @@ m=["."*(w+2)]+["."+input()+"." for i in range(h)]+["."*(w+2)]
 
 #必須再帰関数
 import sys
-sys.setrecursionlimit(10000)
+sys.setrecursionlimit(202020)
+import pypyjit
+pypyjit.set_param('max_unroll_recursion=-1')
