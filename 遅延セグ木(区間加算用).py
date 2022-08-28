@@ -1,4 +1,3 @@
-#返す値
 class LazySegTree_RAQ:
     def __init__(self,init_val,segfunc,ide_ele):
         n = len(init_val)
@@ -66,6 +65,7 @@ class LazySegTree_RAQ:
             l >>= 1
             r >>= 1
         return res
+#返す値
 def segfunc(x, y):
     #return max(x, y)
     #return min(x, y)
