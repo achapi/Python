@@ -1,4 +1,3 @@
-#https://github.com/tatyam-prime/SortedSet
 import math
 from bisect import bisect_left, bisect_right
 from typing import Generic, Iterable, Iterator, TypeVar, Union, List
@@ -128,3 +127,11 @@ class SortedSet(Generic[T]):
                 return ans + bisect_right(a, x)
             ans += len(a)
         return ans
+```
+https://github.com/tatyam-prime/SortedSet
+add(x) xを追加
+discard(x) xを削除
+lt(x) x未満  le(x) x以下 gt(x) xより大きい ge(x) x以上
+index(x) x未満の数
+index_right(x) x以下の数
+```
