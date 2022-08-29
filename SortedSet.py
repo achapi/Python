@@ -129,6 +129,7 @@ class SortedSet(Generic[T]):
         return ans
 ```
 https://github.com/tatyam-prime/SortedSet
+SortedSet
 add(x) xを追加
 discard(x) xを削除
 lt(x) x未満  le(x) x以下 gt(x) xより大きい ge(x) x以上
