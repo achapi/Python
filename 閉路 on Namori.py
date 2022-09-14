@@ -1,18 +1,11 @@
-def dfs(v,c):
-  global roop
-  if len(roop)!=0:return
-  used[v]=True
-  q.append(v)
-  for i in s[v]:
-    if i==c:continue
-    if used[i]:
-      if len(roop)==0:roop=set(q[q.index(i):])
-      flag=False
-    dfs(i,v)
-  q.pop()
-q=[]
-roop=[]
-used=[False]*n
-dfs(0,-1)
+d=[i for i in range(n) if root[i]==1]
+while d:
+  v=d.pop()
+  root[v]-=1
+  for i in g[v]:
+    root[i]-=1
+    if root[i]==1:d.append(i)
+roop=set(i for i in range(n) if root[i]==2)
+root[i]:頂点iの次数の個数
 #N頂点N辺の閉路を探す
 #roopに閉路がset型で入る
