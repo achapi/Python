@@ -1,20 +1,12 @@
 from collections import deque
-import sys
-readline = sys.stdin.readline
-N = int(readline())
-G = [[] for i in range(N)]
-for i in range(N-1):
-    a, b = map(int, readline().split())
-    G[a-1].append(b-1)
-    G[b-1].append(a-1)
 def bfs(s):
-    dist = [None]*N
+    dist = [None]*n
     que = deque([s])
     dist[s] = 0
     while que:
         v = que.popleft()
         d = dist[v]
-        for w in G[v]:
+        for w in g[v]:
             if dist[w] is not None:
                 continue
             dist[w] = d + 1
