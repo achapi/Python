@@ -6,3 +6,13 @@ for i in range(2,10**6):
     fact.append((fact[-1]*i)%mod)
     inv.append((-inv[mod % i]*(mod//i))%mod)
     factinv.append((factinv[-1]*inv[-1])%mod)
+
+
+def ncr(n, r, mod):
+    ret = 1
+    if r < n:
+        inv = [1]
+        for i in range(1, r+1):
+            inv.append(max(1, (-(mod//i) * inv[mod % i]) % mod))
+            ret = ret*(n+1-i)*inv[i] % mod
+    return ret
