@@ -78,6 +78,6 @@ def segfunc(x, y):
 #ide_ele = 0
 #ide_ele = 1
 
-#update(l, r, x): 区間[l, r)の値にxを加算
-#add(l, r): 区間[l, r)をsegfuncしたものを返す
+#add(l, r, x): 区間[l, r)の値にxを加算
+#query(l, r): 区間[l, r)をsegfuncしたものを返す
 seg = LazySegTree_RAQ([], segfunc, ide_ele)
