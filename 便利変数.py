@@ -10,3 +10,7 @@ import sys
 sys.setrecursionlimit(202020)
 import pypyjit
 pypyjit.set_param('max_unroll_recursion=-1')
+
+#python用メモ化再起
+from functools import lru_cache
+@lru_cache
