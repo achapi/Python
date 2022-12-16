@@ -79,8 +79,8 @@ class PriorityDeque:
         return k
 """
 s=PriorityDeque(list)
-s.pop_max() 最小値を削除して返す・O(1)
-s.get_max() 最小値を返す・・・・・O(log N)
-s.pop_max() 最大値を削除して返す・O(1)
-s.get_max() 最大値を返す・・・・・O(log N)
+s.pop_max() 最小値を削除して返す・O(log N)
+s.get_max() 最小値を返す・・・・・O(1)
+s.pop_max() 最大値を削除して返す・O(log N)
+s.get_max() 最大値を返す・・・・・O(1)
 """
